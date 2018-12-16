@@ -8,6 +8,15 @@ const userSchema = new Schema({
             type: String,
             unique:true
         },
+        campus: {
+            type: String,
+            enum: ['Madrid', 'Barcelona','Miami','Paris','Berlin','Amsterdam','Mexico','Sao Paulo']
+        },
+        course: {
+            type: String,
+            enum: ['WebDev','Data Analytics','UX/UI']
+        },
+        img: String
     },
     {
         timestamps:{
